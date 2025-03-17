@@ -3,12 +3,7 @@ const { Web3 } = require('web3');
 
 const { interface, bytecode } = require("./compile");
 
-const provider = new HDWalletProvider({
-  mnemonic: {
-    phrase: '',
-  },
-  providerOrUrl: '',
-});
+const provider = new HDWalletProvider('12 word neumonic of metamask','infura api link you got from metaamask developer of sepolia network');
 
 const web3 = new Web3(provider);
 
